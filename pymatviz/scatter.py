@@ -467,7 +467,7 @@ def density_hexbin(
     pmv.powerups.annotate_metrics(xs, ys, fig=ax, loc="upper left")
 
     ax.set(xlabel=xlabel, ylabel=ylabel)
-    ax.set_aspect("equal")
+    ax.set_box_aspect(1)
 
     return ax
 
